@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(libqudt)
 
+# --- Standards ----------------------------------------------------------------
+
+set(CMAKE_C_STANDARD 11)
+
 # --- Libraries ----------------------------------------------------------------
 
 include_directories(
