@@ -20,3 +20,23 @@ add_library(qudt ${QUDT_SOURCES} ${QUDT_HEADERS})
 install(TARGETS qudt
   DESTINATION lib
 )
+
+# --- Resources ----------------------------------------------------------------
+
+# TODO: Glob files
+set(QUDT_RESOURCES
+  res/dimension
+  res/dtype
+  res/ops.ttl
+  res/quantity
+  res/qudt
+  res/qudt-quantity
+  res/unit
+)
+
+install(
+  FILES
+    ${QUDT_RESOURCES}
+  DESTINATION
+    share/qudt
+)
